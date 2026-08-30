@@ -390,6 +390,6 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
 			;;
 		*) die "unknown patch step '$1'" ;;
 	esac
-fi
-sed -i '/qrb5165-iot-rb5.dtb/d' $WORKSPACE/android-kernel/arch/arm64/boot/dts/vendor/qcom/Makefile
+fised -i '/qrb5165/d' $WORKSPACE/android-kernel/arch/arm64/boot/dts/vendor/qcom/Makefile
+
 
