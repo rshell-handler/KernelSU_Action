@@ -390,6 +390,6 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
 			;;
 		*) die "unknown patch step '$1'" ;;
 	esac
-fised -i '/qrb5165/d' $WORKSPACE/android-kernel/arch/arm64/boot/dts/vendor/qcom/Makefile
+sed -i '/qrb5165/d' $WORKSPACE/android-kernel/arch/arm64/boot/dts/vendor/qcom/Makefile
 
 
