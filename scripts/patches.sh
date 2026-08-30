@@ -389,7 +389,8 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
 			if is_true "${ENABLE_HIDE_STUFF:-false}"; then hide_stuff_apply; fi
 			;;
 		*) die "unknown patch step '$1'" ;;
-	esac
-sed -i '/qrb5165/d' $WORKSPACE/android-kernel/arch/arm64/boot/dts/vendor/qcom/Makefile
+	    esac
+    sed -i '/qrb5165/d' $WORKSPACE/android-kernel/arch/arm64/boot/dts/vendor/qcom/Makefile
+fi
 
 
